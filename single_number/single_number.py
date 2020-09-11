@@ -5,7 +5,17 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+     singlenumberarray = []
+
+    for i in arr:
+
+        if i not in singlenumberarray:
+            singlenumberarray.append(i)
+
+        else:
+            singlenumberarray.remove(i)
+
+    return singlenumberarray[0]
 
 
 if __name__ == '__main__':
